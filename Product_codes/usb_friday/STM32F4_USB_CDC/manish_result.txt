@@ -1,0 +1,53 @@
+arm-none-eabi-gcc (Sourcery CodeBench Lite 2013.05-23) 4.7.3
+Copyright (C) 2012 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+Compiling C: src/OSAL/system_stm32f4xx.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/system_stm32f4xx.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/system_stm32f4xx.d src/OSAL/system_stm32f4xx.c -o obj/src/OSAL/system_stm32f4xx.o 
+
+Assembling: src/OSAL/startup_stm32f4xx.s
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -Wa,-adhlns=obj/startup_stm32f4xx.lst -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 src/OSAL/startup_stm32f4xx.s -o obj/src/OSAL/startup_stm32f4xx.o
+
+Compiling C: src/main.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/main.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/main.d src/main.c -o obj/src/main.o 
+
+Compiling C: src/stm32f4xx_it.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/stm32f4xx_it.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/stm32f4xx_it.d src/stm32f4xx_it.c -o obj/src/stm32f4xx_it.o 
+
+Compiling C: src/syscalls.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/syscalls.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/syscalls.d src/syscalls.c -o obj/src/syscalls.o 
+
+Compiling C: src/usbd_usr.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_usr.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_usr.d src/usbd_usr.c -o obj/src/usbd_usr.o 
+
+Compiling C: src/usbd_cdc_vcp.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_cdc_vcp.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_cdc_vcp.d src/usbd_cdc_vcp.c -o obj/src/usbd_cdc_vcp.o 
+
+Compiling C: src/usbd_desc.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_desc.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_desc.d src/usbd_desc.c -o obj/src/usbd_desc.o 
+
+Compiling C: src/usb_bsp.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usb_bsp.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usb_bsp.d src/usb_bsp.c -o obj/src/usb_bsp.o 
+
+Compiling C: libs/USB_Device/Core/src/usbd_core.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_core.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_core.d libs/USB_Device/Core/src/usbd_core.c -o obj/libs/USB_Device/Core/src/usbd_core.o 
+
+Compiling C: libs/USB_Device/Core/src/usbd_ioreq.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_ioreq.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_ioreq.d libs/USB_Device/Core/src/usbd_ioreq.c -o obj/libs/USB_Device/Core/src/usbd_ioreq.o 
+
+Compiling C: libs/USB_Device/Core/src/usbd_req.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_req.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_req.d libs/USB_Device/Core/src/usbd_req.c -o obj/libs/USB_Device/Core/src/usbd_req.o 
+
+Compiling C: libs/USB_Device/Class/cdc/src/usbd_cdc_core.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usbd_cdc_core.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usbd_cdc_core.d libs/USB_Device/Class/cdc/src/usbd_cdc_core.c -o obj/libs/USB_Device/Class/cdc/src/usbd_cdc_core.o 
+
+Compiling C: libs/USB_OTG/src/usb_core.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usb_core.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usb_core.d libs/USB_OTG/src/usb_core.c -o obj/libs/USB_OTG/src/usb_core.o 
+
+Compiling C: libs/USB_OTG/src/usb_dcd.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usb_dcd.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usb_dcd.d libs/USB_OTG/src/usb_dcd.c -o obj/libs/USB_OTG/src/usb_dcd.o 
+
+Compiling C: libs/USB_OTG/src/usb_dcd_int.c
+arm-none-eabi-gcc -c -Iinc -Ilibs/Conf -Isrc -Ilibs/CMSIS/Include -Ilibs/Device/STM32F4xx/Include -Ilibs/STM32F4xx_StdPeriph_Driver/inc -Ilibs/USB_OTG/inc -Ilibs/USB_Host/Core/inc -Ilibs/USB_Host/Class/MSC/inc -Ilibs/USB_Device/Core/inc -Ilibs/USB_Device/Class/cdc/inc -Ilibs/fat_fs/inc -O0 -std=gnu99 -gdwarf-2 -ffunction-sections -fdata-sections -Wall -Wa,-adhlns=obj/usb_dcd_int.lst -fsingle-precision-constant -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -MMD -MP -MF obj/usb_dcd_int.d libs/USB_OTG/src/usb_dcd_int.c -o obj/libs/USB_OTG/src/usb_dcd_int.o 

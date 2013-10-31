@@ -139,28 +139,25 @@ int  get_sum(int arr1[], int size, int from_index, int to_index)
 void calculation_test() 
 {
          static int i ; 
-        static int j = 0  ;
+         static int j = 0  ;
          static int from_index = 0;
-	 static int to_index= 0 ; 
+	 static int to_index= 100 ; 
 //for(;;)
 //{
-     //if ( i > SIZE )
-     //return ;
-
    for (i=0; i < SIZE; ++i)
  {
-      //printf(" ADC_Data[%d]:%d\n",i,arr[i]);
-      if ( i == (to_index) )
-        { 
-            avg_arr[j] =(get_sum(arr, 1000, from_index, to_index + 100 ) / 100 ) ;
-             printf("............ADC_AVG[%d]:%d\n",j,avg_arr[j]);
-               to_index += 100;
-	       from_index += 100;
-              j  = j + 1;  
-               
-            }
+        printf(" ADC_Data[%d]:%d\n",i,arr[i]);
 
-        
+  	if  ( i == (to_index) )
+ 		{
+     
+            		avg_arr[j] =(get_sum(arr, 1000, from_index, to_index ) / 100 ); 
+             		printf("............ADC_AVG[%d]:%d\n",j,avg_arr[j]);
+               		to_index += 100;
+	       		from_index += 100;
+              		j  = j + 1;  
+               	}
+       
    }
      
  //}
